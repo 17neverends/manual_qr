@@ -5,7 +5,7 @@ from utils.char_map import get_char_value
 class AlphanumericFormatter(DataFormatter):
     @staticmethod
     def encode_data(input_data: str) -> str:
-        bit_sequence = ""
+        bit_sequence = "0010"
 
         for i in range(0, len(input_data), 2):
             group = input_data[i:i+2]

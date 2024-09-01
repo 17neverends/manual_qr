@@ -4,7 +4,7 @@ from ..data_formatter import DataFormatter
 class DigitalFormatter(DataFormatter):
     @staticmethod
     def encode_data(input_data: str) -> str:
-        bit_sequence = ""
+        bit_sequence = "0001"
 
         for i in range(0, len(input_data), 3):
             group = input_data[i:i+3]
